@@ -47,6 +47,8 @@ CSV_DATA = {
 class TestIntrastatBase(IntrastatCommon):
     """Tests for this module"""
 
+    _test_user_groups = None
+
     def test_company(self):
         # add 'Demo user' to intrastat_remind_user_ids
         self.demo_company.write(
